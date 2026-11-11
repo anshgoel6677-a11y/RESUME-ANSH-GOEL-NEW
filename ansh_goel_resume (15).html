@@ -1,0 +1,2445 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Goel | BBA-DBE Undergraduate, IIM Bangalore</title>
+    <meta name="description" content="Resume of Ansh Goel, an undergraduate in the online BBA in Digital Business and Entrepreneurship at IIM Bangalore from Panipat, with interests in textile manufacturing, business operations, and financial markets.">
+    <meta name="theme-color" content="#F7F4EE" id="meta-theme-color">
+
+    <!-- Open Graph & Twitter Metadata -->
+    <meta property="og:title" content="Ansh Goel | BBA-DBE Undergraduate, IIM Bangalore">
+    <meta property="og:description" content="BBA-DBE undergraduate at IIM Bangalore, with interests in textile manufacturing, business operations and financial markets.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ansh Goel | BBA-DBE Undergraduate, IIM Bangalore">
+    <meta name="twitter:description" content="BBA-DBE undergraduate at IIM Bangalore, with interests in textile manufacturing, business operations and financial markets.">
+
+    <!-- Inline SVG Favicon (AG Monogram) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23181715'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' fill='%23F7F4EE' font-family='Georgia, serif' font-size='30' letter-spacing='-1'%3EAG%3C/text%3E%3C/svg%3E">
+
+    <!-- Google Fonts: Instrument Serif, Inter (400/500/600), IBM Plex Mono (400/500) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Person Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ansh Goel",
+      "description": "Undergraduate pursuing the online Bachelor of Business Administration in Digital Business and Entrepreneurship (BBA-DBE) at the Indian Institute of Management Bangalore.",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Indian Institute of Management Bangalore"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Indian Institute of Management Bangalore"
+        },
+        {
+          "@type": "School",
+          "name": "Delhi Public School Panipat Refinery"
+        }
+      ],
+      "award": "All India Rank 46 of 2,480 participants, SRCC National Economics Olympiad 2025",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Panipat",
+        "addressRegion": "Haryana",
+        "addressCountry": "India"
+      },
+      "email": "mailto:ansh.goel26@iimb.ac.in",
+      "telephone": "+919996438163",
+      "sameAs": [
+        "https://www.linkedin.com/in/ansh-goel-689051350/"
+      ]
+    }
+    </script>
+
+    <!-- Theme & Progressive Enhancement Init -->
+    <script>
+        (function () {
+            var root = document.documentElement;
+            root.classList.remove('no-js');
+            root.classList.add('js');
+            var theme = 'light';
+            try {
+                var saved = localStorage.getItem('ag_theme');
+                if (saved === 'dark' || saved === 'light') {
+                    theme = saved;
+                }
+            } catch (e) {}
+            root.setAttribute('data-theme', theme);
+            var metaTheme = document.getElementById('meta-theme-color');
+            if (metaTheme) {
+                metaTheme.setAttribute('content', theme === 'dark' ? '#131211' : '#F7F4EE');
+            }
+        })();
+    </script>
+
+    <!-- ==========================================================================
+         CSS: Design Tokens, Scroll-Snap Architecture, Repeatable Reveals & Print
+         ========================================================================== -->
+    <style>
+        /* --- 1. Design Tokens --- */
+        :root {
+            --bg: #F7F4EE;
+            --bg-subtle: #EFECE5;
+            --ink: #181715;
+            --ink-secondary: #433F3A;
+            --ink-muted: #666058;
+            --accent: #9E5A3C;
+            --yarn-taupe: #9A8873;
+            --rule: #D6D0C5;
+            --section-divider: #C5BDB0;
+            --header-bg: rgba(247, 244, 238, 0.9);
+            --hl-color: rgba(158, 90, 60, 0.22);
+            --warp-line: rgba(24, 23, 21, 0.032);
+
+            --font-serif: 'Instrument Serif', Georgia, 'Times New Roman', serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+            --space-1: 0.25rem;  /* 4px */
+            --space-2: 0.5rem;   /* 8px */
+            --space-3: 0.75rem;  /* 12px */
+            --space-4: 1rem;     /* 16px */
+            --space-5: 1.25rem;  /* 20px */
+            --space-6: 1.5rem;  /* 24px */
+            --space-8: 2rem;     /* 32px */
+            --space-10: 2.5rem;  /* 40px */
+            --space-12: 3rem;    /* 48px */
+
+            --container: 1120px;
+            --gutter: clamp(1.25rem, 4vw, 2.5rem);
+            --header-h: 4rem;
+            --ease: cubic-bezier(0.22, 1, 0.36, 1);
+            --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        [data-theme="dark"] {
+            --bg: #131211;
+            --bg-subtle: #1B1917;
+            --ink: #F2EFE9;
+            --ink-secondary: #C8C2B9;
+            --ink-muted: #9E978E;
+            --accent: #D08564;
+            --yarn-taupe: #B5A38E;
+            --rule: #302D29;
+            --section-divider: #38342F;
+            --header-bg: rgba(19, 18, 17, 0.9);
+            --hl-color: rgba(208, 133, 100, 0.26);
+            --warp-line: rgba(242, 239, 233, 0.03);
+        }
+
+        /* --- 2. Reset, Base & Scroll-Snap Architecture --- */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--header-h);
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* Desktop Editorial Chapter Snapping (Proximity preserves natural scroll & long sections) */
+        @media (min-width: 769px) and (min-height: 600px) and (prefers-reduced-motion: no-preference) {
+            html {
+                scroll-snap-type: y proximity;
+            }
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            line-height: 1.65;
+            background-color: var(--bg);
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+            transition: background-color 200ms var(--ease), color 200ms var(--ease);
+        }
+
+        h1, h2, h3, h4 {
+            text-wrap: balance;
+            font-weight: 400;
+        }
+
+        p, li {
+            text-wrap: pretty;
+        }
+
+        p {
+            max-width: 65ch;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font: inherit;
+            color: inherit;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        ::selection {
+            background-color: var(--accent);
+            color: #FAF8F5;
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+            border-radius: 2px;
+        }
+
+        .tabular {
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -3.5rem;
+            left: var(--gutter);
+            background-color: var(--ink);
+            color: var(--bg);
+            padding: var(--space-2) var(--space-4);
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            z-index: 200;
+            transition: top 180ms var(--ease);
+        }
+
+        .skip-link:focus {
+            top: var(--space-3);
+        }
+
+        /* --- 3. Marker Highlight (<mark class="hl">) --- */
+        mark.hl {
+            color: inherit;
+            font-weight: 500;
+            background-color: transparent;
+            background-image: linear-gradient(transparent 58%, var(--hl-color) 58%);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 100% 100%;
+            padding: 0 0.14em;
+            margin: 0 -0.06em;
+            border-radius: 1px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+
+        /* Hidden/reset state when parent section is outside viewport */
+        .js mark.hl {
+            background-size: 0% 100%;
+            transition: background-size 220ms ease-out 0ms;
+        }
+
+        /* Active reveal state when parent section enters viewport */
+        .js .is-visible mark.hl {
+            background-size: 100% 100%;
+            transition: background-size 680ms var(--ease-reveal) 320ms;
+        }
+
+        /* --- 4. Repeatable Bidirectional Section Reveal Animations --- */
+        /* Hidden/Reset State (fast, delay-free reset when section exits viewport) */
+        .js .hero .hero-status,
+        .js .hero .hero-name,
+        .js .hero .hero-lead,
+        .js .hero .hero-actions {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 220ms ease-out 0ms, transform 220ms ease-out 0ms;
+        }
+
+        /* Active State (sequenced editorial entrance when Hero is in viewport) */
+        .js .hero.is-visible .hero-status {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 580ms var(--ease-reveal) 40ms, transform 580ms var(--ease-reveal) 40ms;
+        }
+
+        .js .hero.is-visible .hero-name {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 620ms var(--ease-reveal) 110ms, transform 620ms var(--ease-reveal) 110ms;
+        }
+
+        .js .hero.is-visible .hero-lead {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 620ms var(--ease-reveal) 200ms, transform 620ms var(--ease-reveal) 200ms;
+        }
+
+        .js .hero.is-visible .hero-actions {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 620ms var(--ease-reveal) 290ms, transform 620ms var(--ease-reveal) 290ms;
+        }
+
+        /* Section Heading & Main Body: Hidden/Reset State */
+        .js .fade-section .col-heading {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 220ms ease-out 0ms, transform 220ms ease-out 0ms;
+        }
+
+        .js .fade-section .col-body {
+            opacity: 0;
+            transform: translateY(22px);
+            transition: opacity 220ms ease-out 0ms, transform 220ms ease-out 0ms;
+        }
+
+        /* Section Heading & Main Body: Active Reveal State (Heading first, Body second) */
+        .js .fade-section.is-visible .col-heading {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 560ms var(--ease-reveal) 0ms, transform 560ms var(--ease-reveal) 0ms;
+        }
+
+        .js .fade-section.is-visible .col-body {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 640ms var(--ease-reveal) 130ms, transform 640ms var(--ease-reveal) 130ms;
+        }
+
+        /* Staggered Child Items: Hidden/Reset State */
+        .js .fade-section .stagger-item {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 200ms ease-out 0ms, transform 200ms ease-out 0ms;
+        }
+
+        /* Staggered Child Items: Active Reveal State */
+        .js .fade-section.is-visible .stagger-item {
+            opacity: 1;
+            transform: translateY(0);
+            transition: opacity 580ms var(--ease-reveal), transform 580ms var(--ease-reveal);
+            transition-delay: calc(170ms + (var(--stagger-index, 0) * 85ms));
+        }
+
+        /* --- 5. Layout Container, Editorial Section Dividers & 12-Col Grid --- */
+        .container {
+            max-width: var(--container);
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 var(--gutter);
+        }
+
+        .grid-12 {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            column-gap: var(--space-6);
+            row-gap: var(--space-6);
+            align-items: start;
+        }
+
+        /* Container-aligned 1px horizontal divider with subtle 36px terracotta lead segment */
+        .stitch-section {
+            position: relative;
+            padding: clamp(3rem, 6.5vh, 4.5rem) 0;
+            scroll-margin-top: var(--header-h);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .stitch-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: max(var(--gutter), calc((100% - var(--container)) / 2 + var(--gutter)));
+            right: max(var(--gutter), calc((100% - var(--container)) / 2 + var(--gutter)));
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                var(--accent) 0,
+                var(--accent) 36px,
+                var(--section-divider) 36px,
+                var(--section-divider) 100%
+            );
+            pointer-events: none;
+        }
+
+        @media (min-width: 769px) and (min-height: 600px) {
+            .hero {
+                min-height: calc(92svh - var(--header-h));
+                scroll-snap-align: start;
+            }
+
+            .stitch-section {
+                min-height: calc(76svh - var(--header-h));
+                scroll-snap-align: start;
+            }
+
+            /* Education has more vertical density */
+            #education.stitch-section {
+                min-height: calc(88svh - var(--header-h));
+            }
+
+            /* Shorter sections sit comfortably without excess blank space */
+            #where-im-headed.stitch-section {
+                min-height: 46svh;
+            }
+
+            #contact.stitch-section {
+                min-height: 58svh;
+            }
+        }
+
+        /* Left Column Heading & Subtle Editorial Metadata Kicker */
+        .col-heading {
+            grid-column: 1 / 4;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-1);
+        }
+
+        .col-body {
+            grid-column: 4 / 13;
+        }
+
+        .section-kicker {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ink-muted);
+        }
+
+        .section-heading {
+            font-family: var(--font-serif);
+            font-size: clamp(1.85rem, 3vw, 2.35rem);
+            line-height: 1.1;
+            color: var(--ink);
+            letter-spacing: -0.01em;
+        }
+
+        .section-note {
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
+            color: var(--ink-muted);
+            line-height: 1.45;
+            margin-top: var(--space-1);
+            max-width: 20ch;
+        }
+
+        /* Inline Animated Text Underline Link */
+        .text-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-1);
+            color: var(--ink);
+            font-weight: 500;
+            background-image: linear-gradient(var(--accent), var(--accent));
+            background-repeat: no-repeat;
+            background-position: 0 100%;
+            background-size: 100% 1px;
+            padding-bottom: 2px;
+            transition: color 180ms var(--ease), background-size 200ms var(--ease);
+        }
+
+        .text-link:hover {
+            color: var(--accent);
+            background-size: 100% 2px;
+        }
+
+        /* --- 6. Header & Navigation --- */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            height: var(--header-h);
+            background-color: var(--header-bg);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--section-divider);
+        }
+
+        .header-inner {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--space-4);
+        }
+
+        .wordmark {
+            font-family: var(--font-serif);
+            font-size: 1.45rem;
+            line-height: 1;
+            color: var(--ink);
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .site-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list {
+            display: flex;
+            align-items: center;
+            gap: var(--space-5);
+        }
+
+        .nav-link {
+            font-size: 0.875rem;
+            color: var(--ink-secondary);
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            transition: color 180ms var(--ease);
+        }
+
+        .nav-link:hover,
+        .nav-link[aria-current="location"] {
+            color: var(--ink);
+        }
+
+        .nav-link[aria-current="location"]::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0.55rem;
+            height: 1.5px;
+            background-color: var(--accent);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .icon-btn {
+            width: 44px;
+            height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--rule);
+            border-radius: 4px;
+            color: var(--ink);
+            transition: border-color 180ms var(--ease), background-color 180ms var(--ease);
+        }
+
+        .icon-btn:hover {
+            border-color: var(--ink);
+            background-color: var(--bg-subtle);
+        }
+
+        .icon-sun { display: none; }
+        .icon-moon { display: block; }
+        [data-theme="dark"] .icon-sun { display: block; }
+        [data-theme="dark"] .icon-moon { display: none; }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .icon-close { display: none; }
+        .menu-toggle[aria-expanded="true"] .icon-menu { display: none; }
+        .menu-toggle[aria-expanded="true"] .icon-close { display: block; }
+
+        /* --- 7. Hero Section (Warp-and-Weft + Two Subtle Yarn Threads) --- */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: clamp(3rem, 7.5vh, 5rem) 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            scroll-margin-top: var(--header-h);
+            background-image:
+                repeating-linear-gradient(0deg, var(--warp-line) 0, var(--warp-line) 1px, transparent 1px, transparent 20px),
+                repeating-linear-gradient(90deg, var(--warp-line) 0, var(--warp-line) 1px, transparent 1px, transparent 20px);
+            background-size: 20px 20px;
+        }
+
+        .hero-yarn-backdrop {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .hero-yarn-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .yarn-strand-terracotta {
+            stroke: var(--accent);
+            opacity: 0.25;
+            animation: yarnDriftSlow 44s ease-in-out infinite alternate;
+        }
+
+        .yarn-strand-taupe {
+            stroke: var(--yarn-taupe);
+            opacity: 0.22;
+            animation: yarnDriftSlow 50s ease-in-out infinite alternate-reverse;
+        }
+
+        [data-theme="dark"] .yarn-strand-terracotta {
+            opacity: 0.2;
+        }
+
+        [data-theme="dark"] .yarn-strand-taupe {
+            opacity: 0.18;
+        }
+
+        @keyframes yarnDriftSlow {
+            0% { transform: translateY(-3px); }
+            100% { transform: translateY(3px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 48rem;
+        }
+
+        .hero-status {
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            color: var(--ink-muted);
+            letter-spacing: 0.02em;
+            margin-bottom: var(--space-3);
+        }
+
+        .hero-name {
+            font-family: var(--font-serif);
+            font-size: clamp(3.75rem, 9vw, 6.75rem);
+            line-height: 0.96;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+            margin-bottom: var(--space-4);
+        }
+
+        .hero-lead {
+            font-size: clamp(1.125rem, 1.75vw, 1.35rem);
+            line-height: 1.55;
+            color: var(--ink-secondary);
+            max-width: 56ch;
+            margin-bottom: var(--space-6);
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: var(--space-3) var(--space-4);
+        }
+
+        .btn-primary {
+            min-height: 44px;
+            padding: 0 var(--space-5);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 4px;
+            background-color: var(--ink);
+            color: var(--bg);
+            border: 1px solid var(--ink);
+            transition: background-color 180ms var(--ease), border-color 180ms var(--ease), color 180ms var(--ease);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: #FAF8F5;
+        }
+
+        .hero-text-link {
+            min-height: 44px;
+            padding: 0 var(--space-2);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-1);
+            font-size: 0.9rem;
+            color: var(--ink-secondary);
+            transition: color 180ms var(--ease);
+        }
+
+        .hero-text-link:hover {
+            color: var(--ink);
+        }
+
+        /* --- 8. About Section (Two Paragraphs + Subtle Metadata Strip) --- */
+        .about-stack {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+
+        .about-text {
+            font-size: clamp(1.04rem, 1.28vw, 1.15rem);
+            line-height: 1.68;
+            color: var(--ink-secondary);
+            max-width: 63ch;
+        }
+
+        .about-meta-strip {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: var(--space-4);
+            margin-top: var(--space-2);
+            padding-top: var(--space-4);
+            border-top: 1px solid var(--rule);
+        }
+
+        .meta-cell-label {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+            margin-bottom: 2px;
+        }
+
+        .meta-cell-val {
+            font-size: 0.9rem;
+            color: var(--ink);
+            font-weight: 500;
+        }
+
+        /* --- 9. Education Section (Degree, Selected Coursework, School & Academic Distinction) --- */
+        .edu-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .edu-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: var(--space-4);
+            padding: var(--space-5) 0;
+            border-bottom: 1px solid var(--rule);
+            align-items: baseline;
+        }
+
+        .edu-row:first-child {
+            padding-top: 0;
+        }
+
+        .edu-row:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .edu-institution {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            line-height: 1.2;
+            color: var(--ink);
+            margin-bottom: 2px;
+        }
+
+        .edu-degree {
+            font-size: 0.96rem;
+            color: var(--ink-secondary);
+        }
+
+        .edu-scores {
+            margin-top: var(--space-1);
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            color: var(--ink-muted);
+        }
+
+        .edu-scores strong {
+            color: var(--ink);
+            font-weight: 500;
+        }
+
+        .edu-meta {
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            color: var(--ink-muted);
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        /* Compact Selected Coursework & Academic Focus Header */
+        .edu-subsection {
+            margin-top: var(--space-3);
+            padding-top: var(--space-3);
+            border-top: 1px dashed var(--rule);
+        }
+
+        .edu-sublabel-bar {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: var(--space-2);
+            margin-bottom: var(--space-2);
+        }
+
+        .edu-sublabel {
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+        }
+
+        .edu-sublabel-tag {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            color: var(--accent);
+            letter-spacing: 0.04em;
+        }
+
+        .coursework-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            column-gap: var(--space-6);
+            row-gap: var(--space-1);
+        }
+
+        .coursework-list li {
+            font-size: 0.885rem;
+            line-height: 1.5;
+            color: var(--ink-secondary);
+            position: relative;
+            padding-left: var(--space-3);
+        }
+
+        .coursework-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* Compact Editorial Achievement Highlight (Academic Distinction) */
+        .edu-row.edu-distinction {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: var(--space-6);
+            padding-top: var(--space-5);
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .edu-row.edu-distinction::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 3rem;
+            height: 2px;
+            background-color: var(--accent);
+        }
+
+        .distinction-main {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .distinction-kicker {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin-bottom: 2px;
+        }
+
+        .distinction-title-group {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: var(--space-1) var(--space-3);
+        }
+
+        .distinction-title-group .edu-institution {
+            margin-bottom: 0;
+        }
+
+        .distinction-qualifier {
+            font-size: 0.92rem;
+            font-weight: 500;
+            color: var(--ink-secondary);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .distinction-qualifier::before {
+            content: "·";
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .distinction-cert {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--ink-muted);
+            margin-top: 2px;
+        }
+
+        .distinction-rank {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            text-align: right;
+            padding-left: var(--space-6);
+            border-left: 1px dashed var(--rule);
+        }
+
+        .distinction-rank-primary {
+            font-family: var(--font-serif);
+            font-size: clamp(1.85rem, 2.5vw, 2.25rem);
+            line-height: 1;
+            color: var(--ink);
+            letter-spacing: -0.01em;
+        }
+
+        .distinction-rank-primary mark.hl {
+            font-weight: 400;
+            padding: 0 0.1em;
+        }
+
+        .distinction-rank-sub {
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
+            color: var(--ink-muted);
+            margin-top: var(--space-1);
+            white-space: nowrap;
+        }
+
+        /* --- 10. Experience Section (With 4-Item Metadata Fact Rail) --- */
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: var(--space-2) var(--space-4);
+            margin-bottom: var(--space-3);
+        }
+
+        .exp-role {
+            font-family: var(--font-serif);
+            font-size: 1.65rem;
+            line-height: 1.15;
+            color: var(--ink);
+        }
+
+        .exp-company {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--ink-secondary);
+            margin-top: 2px;
+        }
+
+        .exp-meta {
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            color: var(--ink-muted);
+            text-align: right;
+        }
+
+        .exp-fact-rail {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: var(--space-3);
+            padding: var(--space-3) 0;
+            margin-bottom: var(--space-4);
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .exp-fact-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding-right: var(--space-2);
+            border-right: 1px dashed var(--rule);
+        }
+
+        .exp-fact-item:last-child {
+            border-right: none;
+            padding-right: 0;
+        }
+
+        .exp-fact-label {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink-muted);
+        }
+
+        .exp-fact-val {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--ink);
+        }
+
+        .exp-bullets {
+            display: grid;
+            gap: var(--space-3);
+            padding-left: var(--space-4);
+        }
+
+        .exp-bullets li {
+            position: relative;
+            color: var(--ink-secondary);
+            font-size: 0.985rem;
+            max-width: 64ch;
+        }
+
+        .exp-bullets li::before {
+            content: "";
+            position: absolute;
+            left: calc(-1 * var(--space-4));
+            top: 0.68em;
+            width: 5px;
+            height: 1.5px;
+            background-color: var(--accent);
+        }
+
+        /* --- 11. Beyond Class Section (Two Columns + Small Editorial Topic Labels) --- */
+        .beyond-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-8);
+        }
+
+        .beyond-col {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-2);
+        }
+
+        .sub-heading {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            line-height: 1.2;
+            color: var(--ink);
+        }
+
+        .beyond-col p {
+            font-size: 0.96rem;
+            color: var(--ink-secondary);
+        }
+
+        .topic-label-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-1) var(--space-2);
+            margin: var(--space-1) 0;
+        }
+
+        .topic-label {
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            color: var(--ink-secondary);
+            background-color: var(--bg-subtle);
+            border: 1px solid var(--rule);
+            padding: 0.15rem 0.5rem;
+            border-radius: 2px;
+            letter-spacing: 0.02em;
+        }
+
+        .beyond-points {
+            display: grid;
+            gap: var(--space-2);
+            margin-top: var(--space-1);
+            border-top: 1px solid var(--rule);
+            padding-top: var(--space-3);
+        }
+
+        .beyond-points li {
+            font-size: 0.935rem;
+            color: var(--ink-secondary);
+            padding-left: var(--space-4);
+            position: relative;
+        }
+
+        .beyond-points li::before {
+            content: "·";
+            position: absolute;
+            left: 0.25rem;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* --- 12. Skills Section (Three Categories + Descriptive Subtitles) --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: var(--space-8);
+        }
+
+        .skill-group-header {
+            padding-bottom: var(--space-3);
+            margin-bottom: var(--space-3);
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .skill-group-title {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ink);
+            margin-bottom: var(--space-1);
+        }
+
+        .skill-group-sub {
+            font-size: 0.85rem;
+            line-height: 1.45;
+            color: var(--ink-muted);
+        }
+
+        .skill-items {
+            display: grid;
+            gap: var(--space-2);
+        }
+
+        .skill-items li {
+            font-size: 0.95rem;
+            color: var(--ink-secondary);
+            position: relative;
+            padding-left: var(--space-3);
+        }
+
+        .skill-items li::before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        /* --- 13. Where I'm Headed (Pullquote + Three Focus Labels) --- */
+        .direction-pullquote {
+            border-left: 2px solid var(--accent);
+            padding: var(--space-1) 0 var(--space-1) var(--space-5);
+        }
+
+        .direction-quote {
+            font-family: var(--font-serif);
+            font-size: clamp(1.45rem, 2.4vw, 1.95rem);
+            line-height: 1.32;
+            color: var(--ink);
+            max-width: 52ch;
+        }
+
+        .direction-focus-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: var(--space-2) var(--space-5);
+            margin-top: var(--space-4);
+            padding-left: var(--space-5);
+        }
+
+        .direction-focus-label {
+            font-family: var(--font-mono);
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .direction-focus-label::before {
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: var(--accent);
+        }
+
+        /* --- 14. Contact & Minimal Footer --- */
+        .contact-intro {
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            color: var(--ink-muted);
+            letter-spacing: 0.01em;
+            margin-bottom: var(--space-4);
+        }
+
+        .email-action-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: var(--space-3);
+            margin-bottom: var(--space-6);
+        }
+
+        .email-primary-link {
+            font-family: var(--font-serif);
+            font-size: clamp(1.75rem, 3.5vw, 2.6rem);
+            line-height: 1.1;
+            color: var(--ink);
+            border-bottom: 1px solid var(--rule);
+            padding-bottom: 2px;
+            transition: color 180ms var(--ease), border-color 180ms var(--ease);
+            word-break: break-all;
+        }
+
+        .email-primary-link:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .copy-btn {
+            min-height: 44px;
+            padding: 0 var(--space-3);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--ink-secondary);
+            border: 1px solid var(--rule);
+            border-radius: 4px;
+            background-color: var(--bg-subtle);
+            transition: border-color 180ms var(--ease), color 180ms var(--ease);
+        }
+
+        .copy-btn:hover {
+            border-color: var(--ink);
+            color: var(--ink);
+        }
+
+        .copy-status {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--accent);
+        }
+
+        .contact-meta-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: var(--space-6);
+            padding-top: var(--space-5);
+            border-top: 1px solid var(--rule);
+        }
+
+        .contact-item-label {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--ink-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: var(--space-1);
+        }
+
+        .contact-item-val {
+            font-size: 0.95rem;
+            color: var(--ink);
+        }
+
+        .site-footer {
+            position: relative;
+            padding: var(--space-5) 0;
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--ink-muted);
+        }
+
+        .site-footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: max(var(--gutter), calc((100% - var(--container)) / 2 + var(--gutter)));
+            right: max(var(--gutter), calc((100% - var(--container)) / 2 + var(--gutter)));
+            height: 1px;
+            background-color: var(--section-divider);
+            pointer-events: none;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--space-3);
+        }
+
+        /* --- 15. Responsive Breakpoints --- */
+        @media (max-width: 1024px) {
+            .col-heading,
+            .col-body {
+                grid-column: 1 / -1;
+            }
+
+            .section-note {
+                max-width: none;
+            }
+
+            .grid-12 {
+                row-gap: var(--space-4);
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                scroll-snap-type: none;
+            }
+
+            .menu-toggle {
+                display: inline-flex;
+            }
+
+            .site-nav {
+                position: fixed;
+                top: var(--header-h);
+                left: 0;
+                right: 0;
+                background-color: var(--bg);
+                border-bottom: 1px solid var(--rule);
+                padding: var(--space-4) var(--gutter) var(--space-6);
+                display: none;
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+            }
+
+            .site-nav.is-open {
+                display: block;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+            }
+
+            .nav-link {
+                width: 100%;
+                border-bottom: 1px dashed var(--rule);
+                font-size: 0.95rem;
+            }
+
+            .nav-link[aria-current="location"]::after {
+                display: none;
+            }
+
+            .hero {
+                min-height: calc(88svh - var(--header-h));
+                padding: var(--space-8) 0;
+            }
+
+            .stitch-section,
+            #education.stitch-section,
+            #where-im-headed.stitch-section,
+            #contact.stitch-section {
+                min-height: auto;
+                padding: clamp(2.5rem, 6vw, 3.5rem) 0;
+            }
+
+            .hero-name {
+                font-size: clamp(3rem, 13vw, 4.5rem);
+                margin-bottom: var(--space-3);
+            }
+
+            .hero-lead {
+                font-size: 1.05rem;
+                margin-bottom: var(--space-5);
+            }
+
+            .about-meta-strip {
+                grid-template-columns: 1fr;
+                gap: var(--space-3);
+            }
+
+            .edu-row {
+                grid-template-columns: 1fr;
+                gap: var(--space-1);
+                padding: var(--space-4) 0;
+            }
+
+            .edu-row.edu-distinction {
+                grid-template-columns: 1fr;
+                gap: var(--space-3);
+                padding-top: var(--space-4);
+            }
+
+            .distinction-qualifier::before {
+                display: none;
+            }
+
+            .distinction-title-group {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
+
+            .distinction-rank {
+                align-items: flex-start;
+                text-align: left;
+                padding-left: var(--space-3);
+                border-left: 2px solid var(--accent);
+            }
+
+            .edu-meta,
+            .exp-meta {
+                text-align: left;
+            }
+
+            .exp-fact-rail {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: var(--space-3);
+            }
+
+            .exp-fact-item:nth-child(2) {
+                border-right: none;
+            }
+
+            .coursework-list,
+            .beyond-grid,
+            .skills-grid,
+            .contact-meta-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-5);
+            }
+
+            .coursework-list {
+                gap: var(--space-1);
+            }
+
+            .direction-focus-row {
+                padding-left: 0;
+            }
+        }
+
+        /* --- 16. Reduced Motion Preference --- */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+                scroll-snap-type: none;
+            }
+            *, *::before, *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+                transition-delay: 0ms !important;
+            }
+            .yarn-strand-terracotta,
+            .yarn-strand-taupe {
+                animation: none;
+            }
+            .js .hero .hero-status,
+            .js .hero .hero-name,
+            .js .hero .hero-lead,
+            .js .hero .hero-actions,
+            .js .fade-section .col-heading,
+            .js .fade-section .col-body,
+            .js .fade-section .stagger-item {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+            .js mark.hl {
+                background-size: 100% 100% !important;
+            }
+        }
+
+        /* --- 17. Print Stylesheet (One-Page A4 Clean Resume) --- */
+        .print-only-header {
+            display: none;
+        }
+
+        @media print {
+            @page {
+                size: A4 portrait;
+                margin: 10mm 12mm;
+            }
+
+            html, body {
+                background: #FFFFFF;
+                color: #000000;
+                font-size: 9pt;
+                line-height: 1.35;
+                scroll-snap-type: none;
+            }
+
+            .skip-link,
+            .site-header,
+            .hero,
+            .section-kicker,
+            .section-note,
+            .about-meta-strip,
+            .copy-btn,
+            .copy-status,
+            .contact-section,
+            .site-footer {
+                display: none;
+            }
+
+            .print-only-header {
+                display: block;
+                border-bottom: 1pt solid #000000;
+                padding-bottom: 4pt;
+                margin-bottom: 6pt;
+            }
+
+            .print-name {
+                font-family: var(--font-serif);
+                font-size: 19pt;
+                line-height: 1;
+                margin-bottom: 3pt;
+            }
+
+            .print-contact-line {
+                font-family: var(--font-mono);
+                font-size: 7.8pt;
+                color: #222222;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .js .fade-section .col-heading,
+            .js .fade-section .col-body,
+            .js .fade-section .stagger-item {
+                opacity: 1;
+                transform: none;
+            }
+
+            mark.hl,
+            .js mark.hl {
+                background: none;
+                font-weight: 600;
+                padding: 0;
+                margin: 0;
+            }
+
+            .stitch-section::before,
+            .site-footer::before {
+                display: none;
+            }
+
+            .stitch-section,
+            #education.stitch-section,
+            #where-im-headed.stitch-section {
+                min-height: auto;
+                padding: 4.5pt 0;
+                border-top: 0.5pt solid #CCCCCC;
+                page-break-inside: avoid;
+                break-inside: avoid;
+                display: block;
+            }
+
+            #about.stitch-section {
+                border-top: none;
+                padding-top: 0;
+            }
+
+            .grid-12 {
+                display: block;
+            }
+
+            .section-heading {
+                font-family: var(--font-sans);
+                font-size: 9pt;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                margin-bottom: 2.5pt;
+            }
+
+            .about-stack {
+                gap: 3pt;
+            }
+
+            .about-text {
+                font-size: 8.4pt;
+                max-width: 100%;
+                color: #111111;
+            }
+
+            .edu-row {
+                padding: 2pt 0;
+                border-bottom: none;
+            }
+
+            .edu-institution {
+                font-family: var(--font-sans);
+                font-size: 9pt;
+                font-weight: 600;
+            }
+
+            .edu-degree,
+            .edu-scores,
+            .edu-meta {
+                font-size: 8pt;
+                color: #111111;
+            }
+
+            .edu-subsection {
+                margin-top: 2pt;
+                padding-top: 2pt;
+                border-top: none;
+            }
+
+            .edu-sublabel-bar {
+                margin-bottom: 1pt;
+            }
+
+            .edu-sublabel,
+            .edu-sublabel-tag {
+                font-size: 7.4pt;
+                color: #333333;
+            }
+
+            .coursework-list {
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 8pt;
+                row-gap: 0.5pt;
+            }
+
+            .coursework-list li {
+                font-size: 7.8pt;
+                color: #111111;
+            }
+
+            .edu-row.edu-distinction {
+                padding-top: 3pt;
+                gap: 8pt;
+            }
+
+            .edu-row.edu-distinction::before {
+                display: none;
+            }
+
+            .distinction-kicker {
+                font-size: 7pt;
+                color: #333333;
+                margin-bottom: 0;
+            }
+
+            .distinction-qualifier {
+                font-size: 8pt;
+                color: #111111;
+            }
+
+            .distinction-cert {
+                font-size: 7.5pt;
+                color: #333333;
+            }
+
+            .distinction-rank {
+                border-left: none;
+                padding-left: 0;
+            }
+
+            .distinction-rank-primary {
+                font-family: var(--font-sans);
+                font-size: 9pt;
+                font-weight: 600;
+            }
+
+            .distinction-rank-sub {
+                font-size: 7.5pt;
+                color: #222222;
+                margin-top: 0;
+            }
+
+            .exp-header {
+                margin-bottom: 2pt;
+            }
+
+            .exp-role {
+                font-family: var(--font-sans);
+                font-size: 9pt;
+                font-weight: 600;
+            }
+
+            .exp-company,
+            .exp-meta {
+                font-size: 8pt;
+                color: #111111;
+            }
+
+            .exp-fact-rail {
+                padding: 2pt 0;
+                margin-bottom: 3pt;
+                gap: 6pt;
+            }
+
+            .exp-fact-label {
+                font-size: 6.8pt;
+            }
+
+            .exp-fact-val {
+                font-size: 7.8pt;
+            }
+
+            .exp-bullets {
+                gap: 1.5pt;
+            }
+
+            .exp-bullets li {
+                font-size: 8.2pt;
+                color: #111111;
+                max-width: 100%;
+            }
+
+            .beyond-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12pt;
+            }
+
+            .sub-heading {
+                font-family: var(--font-sans);
+                font-size: 8.8pt;
+                font-weight: 600;
+            }
+
+            .topic-label-row {
+                gap: 3pt;
+                margin: 1pt 0;
+            }
+
+            .topic-label {
+                font-size: 7pt;
+                padding: 0 3pt;
+                background: none;
+                border: 0.5pt solid #BBBBBB;
+            }
+
+            .beyond-col p,
+            .beyond-points li {
+                font-size: 8pt;
+                color: #111111;
+            }
+
+            .beyond-points {
+                padding-top: 2pt;
+                margin-top: 1pt;
+                gap: 1pt;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10pt;
+            }
+
+            .skill-group-header {
+                margin-bottom: 2pt;
+                padding-bottom: 1.5pt;
+            }
+
+            .skill-group-title {
+                font-size: 7.8pt;
+                color: #111111;
+                margin-bottom: 0;
+            }
+
+            .skill-group-sub {
+                font-size: 7.2pt;
+                color: #444444;
+            }
+
+            .skill-items {
+                gap: 1pt;
+            }
+
+            .skill-items li {
+                font-size: 8pt;
+                color: #111111;
+            }
+
+            .direction-pullquote {
+                border-left: 1.5pt solid #000000;
+                padding: 1pt 0 1pt 6pt;
+            }
+
+            .direction-quote {
+                font-family: var(--font-sans);
+                font-size: 8.25pt;
+                max-width: 100%;
+            }
+
+            .direction-focus-row {
+                margin-top: 2pt;
+                padding-left: 6pt;
+                gap: 8pt;
+            }
+
+            .direction-focus-label {
+                font-size: 7pt;
+                color: #222222;
+            }
+        }
+    </style>
+
+    <!-- Noscript Fallback -->
+    <noscript>
+        <style>
+            .js .hero .hero-status,
+            .js .hero .hero-name,
+            .js .hero .hero-lead,
+            .js .hero .hero-actions,
+            .js .fade-section .col-heading,
+            .js .fade-section .col-body,
+            .js .fade-section .stagger-item { opacity: 1; transform: none; }
+            .js mark.hl { background-size: 100% 100%; }
+        </style>
+    </noscript>
+</head>
+<body>
+
+    <!-- Single Inline SVG Sprite -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
+        <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </symbol>
+        <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </symbol>
+        <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </symbol>
+        <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17L17 7M7 7h10v10"></path>
+        </symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+            <path d="M4 8h16M4 16h16"></path>
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+            <path d="M18 6L6 18M6 6l12 12"></path>
+        </symbol>
+    </svg>
+
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- 1. Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="wordmark">Ansh Goel</a>
+
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#beyond-class" class="nav-link">Beyond class</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button type="button" class="icon-btn" id="theme-toggle" aria-label="Toggle color theme">
+                    <svg class="icon-moon" width="17" height="17" aria-hidden="true"><use href="#i-moon"></use></svg>
+                    <svg class="icon-sun" width="17" height="17" aria-hidden="true"><use href="#i-sun"></use></svg>
+                </button>
+
+                <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+                    <svg class="icon-menu" width="18" height="18" aria-hidden="true"><use href="#i-menu"></use></svg>
+                    <svg class="icon-close" width="18" height="18" aria-hidden="true"><use href="#i-close"></use></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Print-Only Header (for one-page A4 resume output) -->
+        <div class="container print-only-header">
+            <div class="print-name">Ansh Goel</div>
+            <div class="print-contact-line">
+                Panipat, Haryana, India &middot; ansh.goel26@iimb.ac.in &middot; +91 99964 38163 &middot; https://www.linkedin.com/in/ansh-goel-689051350/
+            </div>
+        </div>
+
+        <!-- 2. Hero -->
+        <section class="hero is-visible" id="hero" aria-label="Introduction">
+            <!-- Two subtle continuous textile yarn strands in negative space -->
+            <div class="hero-yarn-backdrop" aria-hidden="true">
+                <svg class="hero-yarn-svg" viewBox="0 0 1440 420" preserveAspectRatio="none">
+                    <g class="yarn-strand-terracotta" fill="none" stroke-linecap="round">
+                        <path d="M -60,290 C 280,335 580,210 940,250 C 1180,275 1340,185 1500,205" stroke-width="1.1" vector-effect="non-scaling-stroke"></path>
+                        <path d="M -60,292 C 282,333 582,212 942,252 C 1182,277 1340,187 1500,207" stroke-width="0.55" stroke-dasharray="9 6" vector-effect="non-scaling-stroke"></path>
+                    </g>
+                    <g class="yarn-strand-taupe" fill="none" stroke-linecap="round">
+                        <path d="M -60,115 C 310,65 670,195 1030,140 C 1240,108 1365,155 1500,130" stroke-width="1.0" vector-effect="non-scaling-stroke"></path>
+                        <path d="M -60,117 C 312,67 672,193 1032,142 C 1242,110 1365,157 1500,132" stroke-width="0.5" stroke-dasharray="11 7" vector-effect="non-scaling-stroke"></path>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-status tabular">BBA-DBE, IIM Bangalore, 2026–2029 / Panipat</p>
+                    <h1 class="hero-name">Ansh Goel</h1>
+                    <p class="hero-lead">
+                        BBA-DBE undergraduate at <mark class="hl">IIM Bangalore</mark>, with interests in <mark class="hl">textile manufacturing</mark>, business operations and <mark class="hl">financial markets</mark>.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ansh.goel26@iimb.ac.in" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                            <span>Email me</span>
+                            <svg width="14" height="14" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ansh-goel-689051350/" target="_blank" rel="noopener noreferrer" class="hero-text-link">
+                            <span>LinkedIn</span>
+                            <svg width="14" height="14" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About (Expanded two-paragraph introduction + compact metadata strip) -->
+        <section class="stitch-section fade-section" id="about" aria-labelledby="heading-about">
+            <div class="container grid-12">
+                <div class="col-heading">
+                    <span class="section-kicker tabular">01 &middot; Profile</span>
+                    <h2 class="section-heading" id="heading-about">About</h2>
+                    <p class="section-note">Background, studies &amp; direction</p>
+                </div>
+                <div class="col-body">
+                    <div class="about-stack">
+                        <p class="about-text stagger-item" style="--stagger-index: 0;">
+                            I grew up in Panipat around my family's <mark class="hl">yarn and fibre trading</mark> business, developing an early interest in textiles, manufacturing and how businesses connect raw materials with finished products. I am pursuing a <mark class="hl">BBA in Digital Business and Entrepreneurship</mark> at IIM Bangalore, where I am building foundations in marketing, entrepreneurship, finance, communication and digital business.
+                        </p>
+                        <p class="about-text stagger-item" style="--stagger-index: 1;">
+                            Outside the classroom, I follow <mark class="hl">Indian financial markets</mark> and mutual funds, explore how manufacturing businesses operate, and take an interest in the economics of sourcing, production and trade. My long-term ambition is to build a business in <mark class="hl">textile manufacturing and exports</mark>, beginning with rugs, carpets and home furnishings.
+                        </p>
+
+                        <div class="about-meta-strip stagger-item" style="--stagger-index: 2;" aria-label="Profile summary">
+                            <div>
+                                <p class="meta-cell-label">Base</p>
+                                <p class="meta-cell-val">Panipat, Haryana</p>
+                            </div>
+                            <div>
+                                <p class="meta-cell-label">Undergraduate Study</p>
+                                <p class="meta-cell-val tabular">BBA-DBE &middot; 2026–2029</p>
+                            </div>
+                            <div>
+                                <p class="meta-cell-label">Primary Interests</p>
+                                <p class="meta-cell-val">Textiles, Operations &amp; Markets</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Education (Degree + Selected Coursework, School, Academic Distinction) -->
+        <section class="stitch-section fade-section" id="education" aria-labelledby="heading-education">
+            <div class="container grid-12">
+                <div class="col-heading">
+                    <span class="section-kicker tabular">02 &middot; Academics</span>
+                    <h2 class="section-heading" id="heading-education">Education</h2>
+                    <p class="section-note">Degree, coursework &amp; distinction</p>
+                </div>
+                <div class="col-body">
+                    <div class="edu-list">
+                        <article class="edu-row stagger-item" style="--stagger-index: 0;">
+                            <div>
+                                <h3 class="edu-institution">Indian Institute of Management Bangalore</h3>
+                                <p class="edu-degree">Bachelor of Business Administration in Digital Business and Entrepreneurship (BBA-DBE) &middot; Online programme</p>
+                                <div class="edu-subsection">
+                                    <div class="edu-sublabel-bar">
+                                        <h4 class="edu-sublabel">Selected Coursework</h4>
+                                        <span class="edu-sublabel-tag">Academic focus &middot; Year I Foundations</span>
+                                    </div>
+                                    <ul class="coursework-list" aria-label="Selected first-year coursework">
+                                        <li>Marketing Fundamentals</li>
+                                        <li>Explorations in Entrepreneurship</li>
+                                        <li>Financial Statements and Business Performance</li>
+                                        <li>Foundations of Business Communication</li>
+                                        <li>Business Statistics for Entrepreneurs</li>
+                                        <li>Website Development</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="edu-meta tabular">2026–2029</div>
+                        </article>
+
+                        <article class="edu-row stagger-item" style="--stagger-index: 1;">
+                            <div>
+                                <h3 class="edu-institution">Delhi Public School Panipat Refinery</h3>
+                                <p class="edu-scores tabular">CBSE &nbsp;&middot;&nbsp; Class X: <strong>93.6%</strong> &nbsp;&middot;&nbsp; Class XII: <strong>87%</strong></p>
+                            </div>
+                            <div class="edu-meta tabular">Class IV–XII</div>
+                        </article>
+
+                        <article class="edu-row edu-distinction stagger-item" style="--stagger-index: 2;">
+                            <div class="distinction-main">
+                                <p class="distinction-kicker">Academic Distinction</p>
+                                <div class="distinction-title-group">
+                                    <h3 class="edu-institution">SRCC National Economics Olympiad <span class="tabular">2025</span></h3>
+                                    <span class="distinction-qualifier">Final Round Qualifier</span>
+                                </div>
+                                <p class="distinction-cert tabular">Certificate of Merit &middot; December 2025</p>
+                            </div>
+                            <div class="distinction-rank" aria-label="All India Rank 46 among 2,480 participants">
+                                <span class="distinction-rank-primary tabular"><mark class="hl">AIR 46</mark></span>
+                                <span class="distinction-rank-sub tabular">among 2,480 participants</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Experience (Role + 4-Item Compact Fact Group + 3 Bullets) -->
+        <section class="stitch-section fade-section" id="experience" aria-labelledby="heading-experience">
+            <div class="container grid-12">
+                <div class="col-heading">
+                    <span class="section-kicker tabular">03 &middot; Internship</span>
+                    <h2 class="section-heading" id="heading-experience">Experience</h2>
+                    <p class="section-note">Operations &amp; workflow observation</p>
+                </div>
+                <div class="col-body">
+                    <article>
+                        <div class="exp-header stagger-item" style="--stagger-index: 0;">
+                            <div>
+                                <h3 class="exp-role">Business Operations Intern</h3>
+                                <p class="exp-company">Jindal Textile Industries Ltd.</p>
+                            </div>
+                            <div class="exp-meta tabular">15 June 2026 – 30 July 2026</div>
+                        </div>
+
+                        <div class="exp-fact-rail stagger-item" style="--stagger-index: 1;" aria-label="Internship details">
+                            <div class="exp-fact-item">
+                                <span class="exp-fact-label">Duration</span>
+                                <span class="exp-fact-val tabular">45 days</span>
+                            </div>
+                            <div class="exp-fact-item">
+                                <span class="exp-fact-label">Location</span>
+                                <span class="exp-fact-val">Panipat, Haryana</span>
+                            </div>
+                            <div class="exp-fact-item">
+                                <span class="exp-fact-label">Format</span>
+                                <span class="exp-fact-val">Hybrid internship</span>
+                            </div>
+                            <div class="exp-fact-item">
+                                <span class="exp-fact-label">Sector</span>
+                                <span class="exp-fact-val">Textile manufacturing</span>
+                            </div>
+                        </div>
+
+                        <ul class="exp-bullets">
+                            <li class="stagger-item" style="--stagger-index: 2;">Assisted with routine operational tasks in a textile manufacturing environment.</li>
+                            <li class="stagger-item" style="--stagger-index: 3;">Followed up on ongoing tasks and internal process steps with team members.</li>
+                            <li class="stagger-item" style="--stagger-index: 4;">Observed the connection between production schedules, raw material supply and administrative functions.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Beyond class (Two Columns + Small Editorial Topic Labels) -->
+        <section class="stitch-section fade-section" id="beyond-class" aria-labelledby="heading-beyond-class">
+            <div class="container grid-12">
+                <div class="col-heading">
+                    <span class="section-kicker tabular">04 &middot; Exposure</span>
+                    <h2 class="section-heading" id="heading-beyond-class">Beyond class</h2>
+                    <p class="section-note">Family trade &amp; market tracking</p>
+                </div>
+                <div class="col-body">
+                    <div class="beyond-grid">
+                        <article class="beyond-col stagger-item" style="--stagger-index: 0;">
+                            <h3 class="sub-heading">Textile industry exposure</h3>
+                            <p>
+                                My family is involved in yarn and fibre trading in Panipat, giving me early exposure through observation and family discussions.
+                            </p>
+                            <div class="topic-label-row" aria-label="Textile exposure topics">
+                                <span class="topic-label">Yarn &amp; Fibres</span>
+                                <span class="topic-label">Raw Material Sourcing</span>
+                                <span class="topic-label">Manufacturing Processes</span>
+                                <span class="topic-label">Finished Products</span>
+                            </div>
+                            <ul class="beyond-points">
+                                <li>Yarn and fibre types and their applications.</li>
+                                <li>Raw material sourcing and buyer requirements.</li>
+                                <li>How trading connects to <mark class="hl">weaving, tufting, finishing</mark> and finished textile products.</li>
+                            </ul>
+                        </article>
+
+                        <article class="beyond-col stagger-item" style="--stagger-index: 1;">
+                            <h3 class="sub-heading">Markets and mutual funds</h3>
+                            <p>
+                                I follow Indian financial markets and <mark class="hl">mutual funds</mark> out of personal interest.
+                            </p>
+                            <div class="topic-label-row" aria-label="Finance interest topics">
+                                <span class="topic-label">Indian Financial Markets</span>
+                                <span class="topic-label">Mutual Fund Research</span>
+                                <span class="topic-label">Asset Allocation</span>
+                                <span class="topic-label">Personal Finance</span>
+                            </div>
+                            <ul class="beyond-points">
+                                <li>Help review and track family mutual fund holdings and <mark class="hl">asset allocation</mark>.</li>
+                                <li>Conduct informal scheme comparisons and fund research.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Skills (Three Categories + Descriptive Subtitles) -->
+        <section class="stitch-section fade-section" id="skills" aria-labelledby="heading-skills">
+            <div class="container grid-12">
+                <div class="col-heading">
+                    <span class="section-kicker tabular">05 &middot; Capabilities</span>
+                    <h2 class="section-heading" id="heading-skills">Skills</h2>
+                    <p class="section-note">Practical tools &amp; familiarity</p>
+                </div>
+                <div class="col-body">
+                    <div class="skills-grid">
+                        <div class="stagger-item" style="--stagger-index: 0;">
+                            <div class="skill-group-header">
+                                <h3 class="skill-group-title">Tools and communication</h3>
+                                <p class="skill-group-sub">Working with information and communicating clearly.</p>
+                            </div>
+                            <ul class="skill-items">
+                                <li>MS Excel</li>
+                                <li>Spreadsheets and basic record-keeping</li>
+                                <li>Written and verbal communication</li>
+                            </ul>
+                        </div>
+
+                        <div class="stagger-item" style="--stagger-index: 1;">
+                            <div class="skill-group-header">
+                                <h3 class="skill-group-title">Business and textile context</h3>
+                                <p class="skill-group-sub">Understanding materials, workflows and business processes.</p>
+                            </div>
+                            <ul class="skill-items">
+                                <li>Yarn and fibre trade familiarity</li>
+                                <li>Basic supply chain understanding</li>
+                                <li>Task and workflow follow-up</li>
+                            </ul>
+                        </div>
+
+                        <div class="stagger-item" style="--stagger-index: 2;">
+                            <div class="skill-group-header">
+                                <h3 class="skill-group-title">Finance and analysis</h3>
+                                <p class="skill-group-sub">Following markets and comparing investment information.</p>
+                            </div>
+                            <ul class="skill-items">
+                                <li>Mutual fund research and comparison</li>
+                                <li>Personal investment tracking</li>
+                                <li>Financial market awareness</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Where I'm headed (Statement + Three Understated Focus Labels) -->
+        <section class="stitch-section fade-section" id="where-im-headed" aria-labelledby="heading-direction">
+            <div class="container grid-12">
+                <div class="col-heading">
+                    <span class="section-kicker tabular">06 &middot; Ambition</span>
+                    <h2 class="section-heading" id="heading-direction">Where I'm headed</h2>
+                </div>
+                <div class="col-body">
+                    <div class="direction-pullquote stagger-item" style="--stagger-index: 0;">
+                        <p class="direction-quote">
+                            Long-term direction: Building a <mark class="hl">textile manufacturing and export business</mark>, beginning with <mark class="hl">rugs, carpets and home textiles</mark>.
+                        </p>
+                    </div>
+                    <div class="direction-focus-row stagger-item" style="--stagger-index: 1;" aria-label="Long-term focus areas">
+                        <span class="direction-focus-label">Textile Manufacturing</span>
+                        <span class="direction-focus-label">Home Furnishings</span>
+                        <span class="direction-focus-label">International Trade</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Contact -->
+        <section class="stitch-section contact-section fade-section" id="contact" aria-labelledby="heading-contact">
+            <div class="container grid-12">
+                <div class="col-heading">
+                    <span class="section-kicker tabular">07 &middot; Connect</span>
+                    <h2 class="section-heading" id="heading-contact">Contact</h2>
+                </div>
+                <div class="col-body">
+                    <p class="contact-intro stagger-item" style="--stagger-index: 0;">
+                        Based in Panipat, India &middot; Open to relevant <mark class="hl">internship opportunities</mark> and professional conversations.
+                    </p>
+
+                    <div class="email-action-wrap stagger-item" style="--stagger-index: 1;">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ansh.goel26@iimb.ac.in" target="_blank" rel="noopener noreferrer" class="email-primary-link">ansh.goel26@iimb.ac.in</a>
+                        <button type="button" class="copy-btn" id="copy-email-btn" data-email="ansh.goel26@iimb.ac.in" aria-label="Copy email address to clipboard">
+                            <svg width="14" height="14" aria-hidden="true"><use href="#i-copy"></use></svg>
+                            <span>Copy email</span>
+                        </button>
+                        <span class="copy-status" id="copy-status" role="status" aria-live="polite"></span>
+                    </div>
+
+                    <div class="contact-meta-grid stagger-item" style="--stagger-index: 2;">
+                        <div>
+                            <p class="contact-item-label">Phone</p>
+                            <p class="contact-item-val tabular">
+                                <a href="tel:+919996438163" class="text-link">+91 99964 38163</a>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="contact-item-label">LinkedIn</p>
+                            <p class="contact-item-val">
+                                <a href="https://www.linkedin.com/in/ansh-goel-689051350/" target="_blank" rel="noopener noreferrer" class="text-link">
+                                    <span>ansh-goel-689051350</span>
+                                    <svg width="13" height="13" aria-hidden="true"><use href="#i-arrow-up-right"></use></svg>
+                                </a>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="contact-item-label">Location</p>
+                            <p class="contact-item-val">Panipat, Haryana, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Minimal Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>Ansh Goel</span>
+            <span>Panipat, Haryana, India</span>
+            <span class="tabular">&copy; <span id="footer-year">2026</span></span>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+         JS: Theme Toggle, Mobile Menu, Copy-to-Clipboard, Bidirectional Reveal & Nav
+         ========================================================================== -->
+    <script>
+        (function () {
+            'use strict';
+
+            var root = document.documentElement;
+            var metaTheme = document.getElementById('meta-theme-color');
+            var themeBtn = document.getElementById('theme-toggle');
+            var menuBtn = document.getElementById('menu-toggle');
+            var siteNav = document.getElementById('site-nav');
+            var navLinks = document.querySelectorAll('.nav-link');
+            var copyBtn = document.getElementById('copy-email-btn');
+            var copyStatus = document.getElementById('copy-status');
+            var yearEl = document.getElementById('footer-year');
+
+            if (yearEl) {
+                yearEl.textContent = String(new Date().getFullYear());
+            }
+
+            /* --- 1. Theme Toggle --- */
+            function setTheme(theme, persist) {
+                root.setAttribute('data-theme', theme);
+                if (metaTheme) {
+                    metaTheme.setAttribute('content', theme === 'dark' ? '#131211' : '#F7F4EE');
+                }
+                if (themeBtn) {
+                    themeBtn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+                }
+                if (persist) {
+                    try {
+                        localStorage.setItem('ag_theme', theme);
+                    } catch (e) {}
+                }
+            }
+
+            if (themeBtn) {
+                var initialTheme = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+                themeBtn.setAttribute('aria-label', initialTheme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+                themeBtn.addEventListener('click', function () {
+                    var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+                    setTheme(current === 'dark' ? 'light' : 'dark', true);
+                });
+            }
+
+            /* --- 2. Mobile Nav Sheet & Focus Management --- */
+            function closeMobileNav(restoreFocus) {
+                if (!siteNav || !menuBtn) return;
+                siteNav.classList.remove('is-open');
+                menuBtn.setAttribute('aria-expanded', 'false');
+                if (restoreFocus) menuBtn.focus();
+            }
+
+            if (menuBtn && siteNav) {
+                menuBtn.addEventListener('click', function () {
+                    var expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+                    if (expanded) {
+                        closeMobileNav(false);
+                    } else {
+                        siteNav.classList.add('is-open');
+                        menuBtn.setAttribute('aria-expanded', 'true');
+                        var firstLink = siteNav.querySelector('.nav-link');
+                        if (firstLink) firstLink.focus();
+                    }
+                });
+
+                navLinks.forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        closeMobileNav(false);
+                    });
+                });
+
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape' && siteNav.classList.contains('is-open')) {
+                        closeMobileNav(true);
+                    }
+                });
+            }
+
+            /* --- 3. Copy Email to Clipboard with Fallback --- */
+            var copyTimer = null;
+            if (copyBtn && copyStatus) {
+                copyBtn.addEventListener('click', function () {
+                    var email = copyBtn.getAttribute('data-email') || 'ansh.goel26@iimb.ac.in';
+
+                    function showCopied() {
+                        copyStatus.textContent = 'Copied';
+                        if (copyTimer) clearTimeout(copyTimer);
+                        copyTimer = setTimeout(function () {
+                            copyStatus.textContent = '';
+                        }, 2400);
+                    }
+
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(email).then(showCopied).catch(function () {
+                            fallbackCopy(email, showCopied);
+                        });
+                    } else {
+                        fallbackCopy(email, showCopied);
+                    }
+                });
+            }
+
+            function fallbackCopy(text, callback) {
+                var textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.setAttribute('readonly', '');
+                textarea.style.position = 'fixed';
+                textarea.style.opacity = '0';
+                document.body.appendChild(textarea);
+                textarea.select();
+                try {
+                    document.execCommand('copy');
+                    callback();
+                } catch (e) {}
+                document.body.removeChild(textarea);
+            }
+
+            /* --- 4. Repeatable Bidirectional Section Reveal & Active Nav Observer --- */
+            var animatedSections = document.querySelectorAll('.hero, .fade-section');
+            var navSections = document.querySelectorAll('main > section[id]');
+            var reduceMotionQuery = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+            var revealObserver = null;
+            var activeObserver = null;
+
+            function initScrollObservers() {
+                if (revealObserver) {
+                    revealObserver.disconnect();
+                    revealObserver = null;
+                }
+                if (activeObserver) {
+                    activeObserver.disconnect();
+                    activeObserver = null;
+                }
+
+                var isReducedMotion = reduceMotionQuery && reduceMotionQuery.matches;
+
+                if (isReducedMotion || !('IntersectionObserver' in window)) {
+                    animatedSections.forEach(function (sec) {
+                        sec.classList.add('is-visible');
+                    });
+                } else {
+                    /*
+                     * Dual thresholds ([0, 0.14]) + symmetric vertical rootMargin ('-6% 0px -6% 0px'):
+                     * - When a section enters at least 14% into the active viewport window (from top OR bottom),
+                     *   add .is-visible to trigger the staggered heading -> body -> items -> highlight reveal.
+                     * - When a section completely exits the viewport (intersectionRatio === 0),
+                     *   remove .is-visible so it resets cleanly and replays next time the user scrolls to it.
+                     */
+                    revealObserver = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting && entry.intersectionRatio >= 0.14) {
+                                entry.target.classList.add('is-visible');
+                            } else if (!entry.isIntersecting) {
+                                entry.target.classList.remove('is-visible');
+                            }
+                        });
+                    }, {
+                        root: null,
+                        rootMargin: '-6% 0px -6% 0px',
+                        threshold: [0, 0.14]
+                    });
+
+                    animatedSections.forEach(function (sec) {
+                        revealObserver.observe(sec);
+                    });
+                }
+
+                if ('IntersectionObserver' in window) {
+                    activeObserver = new IntersectionObserver(function (entries) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                var id = entry.target.getAttribute('id');
+                                navLinks.forEach(function (link) {
+                                    if (link.getAttribute('href') === '#' + id) {
+                                        link.setAttribute('aria-current', 'location');
+                                    } else {
+                                        link.removeAttribute('aria-current');
+                                    }
+                                });
+                            }
+                        });
+                    }, { rootMargin: '-32% 0px -52% 0px' });
+
+                    navSections.forEach(function (sec) {
+                        activeObserver.observe(sec);
+                    });
+                }
+            }
+
+            initScrollObservers();
+
+            if (reduceMotionQuery && reduceMotionQuery.addEventListener) {
+                reduceMotionQuery.addEventListener('change', initScrollObservers);
+            }
+        })();
+    </script>
+</body>
+</html>
